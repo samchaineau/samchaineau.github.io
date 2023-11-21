@@ -4,12 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Bio</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Soft blue background */
+            font-family: 'Arial', sans-serif; /* Use your preferred font */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section {
+            width: 70%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        details {
+            margin-bottom: 10px;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Your Name</h1>
-    <p>
-        Hello, I'm Your Name! This is my bio.
-        <!-- Add more content as needed -->
-    </p>
+    <header>
+        <h1>Your Name</h1>
+        <p>Hello, I'm Your Name! This is my bio.</p>
+    </header>
+
+    <section>
+        <p>This is the plain text section of my bio. Feel free to add some information about yourself here.</p>
+    </section>
+
+    <section>
+        <details>
+            <summary>Dropdown Section 1</summary>
+            <p>Content of dropdown section 1.</p>
+        </details>
+    </section>
+
+    <section>
+        <details>
+            <summary>Dropdown Section 2</summary>
+            <p>Content of dropdown section 2.</p>
+        </details>
+    </section>
+
+    <section>
+        <details>
+            <summary>Dropdown Section 3</summary>
+            <p>Content of dropdown section 3.</p>
+        </details>
+    </section>
+
+    <section>
+        <details>
+            <summary>Dropdown Section 4</summary>
+            <p>Content of dropdown section 4.</p>
+        </details>
+    </section>
 </body>
 </html>
+
