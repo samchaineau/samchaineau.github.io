@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Bio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, heigth=device-height">
+    <title>Samuel Chaineau - Data Science, Machine Learning and NLP</title>
     <style>
         body {
             background-color: #f0f8ff; /* Soft blue background */
@@ -19,10 +19,11 @@
 
         header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
+            margin-top: 50px;
         }
 
-        section {
+        .sectionelement {
             width: 70%;
             background-color: white;
             padding: 20px;
@@ -41,53 +42,170 @@
         }
 
         p {
-            margin-top: 0;
+            margin-top: 10;
         }
+
+        .narrow-paragraph {
+            max-width: 600px;
+            margin-top: 10px;
+            margin-bottom : 10px;
+        }
+
+        li {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 4px;
+        }
+        .listexp {
+            font-size: 18px;
+            font-style: normal;
+            margin-bottom: 4px;
+            border-bottom: 1px solid #ccc; /* Add a light border between list items */
+            padding: 10px;
+        }
+        .listitemcv {
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+        .partofexp {
+            font-size: 15px;
+        }
+
+        .expandable-content {
+            max-height: 300px; /* Set a max height or use another suitable value */
+            overflow-y: auto; /* Enable vertical scrolling if necessary */
+          }
     </style>
 </head>
 <body>
-    <header>
-        <img src="Samuel.JPG" alt="Samuel Chaineau" width="100" height="100">
+        <section>
+        <img src="Samuel.JPG" alt="Samuel Chaineau" width="300" height="300">
         <h1>Samuel Chaineau</h1>
-        <p>Contacts
-        <p>Hello and welcome on my personnal page. Here you can find my latest news and works related to Machine Learning, NLP and Sports Analytics.</p>
-        <h2>Interests</h2>
-    <ul>
-        <li>Machine Learning</li>
-        <li>NLP</li>
-        <li>Healthcare</li>
-        <li>Sports Analytics</li>
-    </ul>
-    </header>
+        </section>
 
-    <section>
-        <p>This is the plain text section of my bio. Feel free to add some information about yourself here.</p>
+    <section class="sectionelement">
+        <details>
+        <summary>About me</summary>
+        <p>I am a French tech enthusiast with a strong interest in Data Science, Machine Learning and its application. I am currently the CTO of Nuvocare, an health start-up based in Paris.
+            As part of my work, I monitor the product development, our cloud infrastructure and explore use cases for AI (especially NLP) in healthcare.<br>
+        <br>
+        I have several experiences in Data Science applied for : finance, public institution, marketing effectiveness, retail and luxury. On a personnal note, I spend time on translating latest NLP models to sequence modeling in sports analytics (especially the NFL). 
+        <br>
+        <br>
+        You can find my medium profile <a href="https://medium.com/@sam.chaineau">here</a> where I publish my latest research. <br>
+        You can find my HuggingFace profile <a href="https://huggingface.co/samchain">here</a> where I publish my latest models, datasets and spaces.
+    </p>
+    </details>
     </section>
 
-    <section>
+    <section class="sectionelement">
         <details>
-            <summary>Dropdown Section 1</summary>
-            <p>Content of dropdown section 1.</p>
+            <summary>Professionnal experiences</summary>
+            <div class="expandable-content">
+                <ul>
+                    <li class="listexp"> <a href="https://nuvocare.fr/"><b>Nuvocare</b></a>, <i> Chief Technology Officer</i> , since May 2023 <br>
+                        <br>
+                        <u class="partofexp">Product responsabilities :</u> <br>
+                    <ul>
+                        <li class= "listitemcv">Ensured the development of our first MVP by specifying the requirements for the database, API, rights and routes.</li>
+                        <li class= "listitemcv">Designed the cloud infrastructure and contracted with appropriate providers</li>
+                        <li class= "listitemcv">Listed the compliance elements and defined the related roadmap (Data Privacy Officer, certifications, documentation...)</li>
+                        <li class= "listitemcv">Collaborated at the development of the user journey, pages' interactions and user experience</li>
+                    </ul>
+                    <br>
+                    <u class="partofexp">Research responsabilities:</u><br>
+                    <ul>
+                        <li class= "listitemcv">Explored NLP application for information retrieval, text anonymization and features extraction</li>
+                        <li class= "listitemcv">Managed our HuggingFace page with models, datasets and applications</li>
+                        <li class= "listitemcv">Built several Retrieval Augmented Generation prooves of concepts for hospitals, doctors and patients</li>
+                        <li class= "listitemcv">Answered to multiple projects calls for AI in Healthcare</li>
+                    </ul>
+                    <br>
+                    </li>
+                    <li class="listexp"> <a href="https://ekimetrics.com/"><b>Ekimetrics</b></a>, <i>Senior Data Scientist</i>, April 2021 - September 2023 <br>
+                        <br>
+                        <u class="partofexp">Natural Language Processing</u>
+                        <ul>
+                            <li class = "listitemcv">Worked for a major European asset-manager on maintaining and improving a NLP solution for companies' scoring and features extraction.</li>
+                            <li class = "listitemcv">Performed and led researches on : Few-Shot Learning, Named-Entity Recognition, NLP for time series and information retrieval.</li>
+                            <li class = "listitemcv">Developed a multi aspect sentiment analysis algorithm based on Transformers' architecture</li>
+                        </ul>
+                        <br>
+                        <u class="partofexp">Marketing effectiveness</u>
+                        <ul>
+                            <li class="listitemcv">Worked for automotive, gambling, luxury and retail industries on various analysis and MMM models</li>
+                            <li class="listitemcv">Developped and pushed in the in-house library a toolkit using dimension reduction for correlated variable (PCR)</li>
+                            <li class="listitemcv">Presented and exchanged on results with key stakeholders and partners</li>
+                        </ul>
+                        <br>
+                        <u class="partofexp">Other experiences:</u>
+                        <ul>
+                            <li class="listitemcv">Experienced with Databricks, Kedro, GitLab and Azure</li>
+                            <li class="listitemcv">Programmed in python with libraries such as : pyspark, polars, tensoflow, transformers, scikit-learn, statmodels...</li>
+                        </ul>
+                        <ul>
+
+                        </ul>
+                        <br>
+                    </li>
+                    <li class="listexp"><a href="https://www.undp.org/"><b>United Nations Development Program</b></a>, <i>Consultant</i>, November 2020 - Februrary 2021 <br>
+                        <br>
+                        <u class="partofexp">Tasks:</u>
+                        <ul>
+                            <li class="listitemcv">Supported the collaborative process for the Common Country Analysis</li>
+                            <li class="listitemcv">Responsible for data analysis and gathering on different topics (justice, agriculture, economy...)</li>
+                            <li class="listitemcv">Reported to UN economists, Morrocco officials and other UN representatives</li>
+                        </ul>
+
+                    </li>
+                    <li class ="listexp"><a href="https://www.pwc.com/gx/en.html"><b>PWC</b></a>, Research Data Scientist Intern, July 2019 - December 2019
+
+                    </li>
+
+                </ul>
+            </div>
         </details>
     </section>
 
-    <section>
+    <section class="sectionelement">
         <details>
-            <summary>Dropdown Section 2</summary>
-            <p>Content of dropdown section 2.</p>
+            <summary>Education</summary>
+            <div class="expandable-content">
+            <ul>
+                <li class="listexp"> <a href="https://u-paris.fr/sante/"><b>Université Paris Santé</b></a>, University Diploma in Artificial Intelligence applied to Healthcare, On-going <br>
+                </li>
+                <li class="listexp"> <a href="https://em-lyon.com/"><b>EM Lyon</b></a>, Master of Science in Management (Programme Grande École), September 2018 - September 2021 <br>
+                </li>
+                <li class="listexp"> <a href="https://www.ec-lyon.fr/"><b>Ecole Centrale de Lyon</b></a>, Exchange year in Master in Computer Sciences, September 2020 - September 2021 <br>      
+                </li>
+                <li class="listexp"> <a href="https://www.pantheonsorbonne.fr/"><b>Université Paris 1 Panthéon-Sorbonne</b></a>, Bachelor in Economics and Management, September 2015 - September 2018 <br>      
+                </li>
+            </ul>
+            </div>
         </details>
     </section>
 
-    <section>
+    <section class="sectionelement">
         <details>
-            <summary>Dropdown Section 3</summary>
-            <p>Content of dropdown section 3.</p>
+            <summary>Research, teaching and on-going work</summary>
+            <ul>
+                <li class="listexp"> <a href="https://medium.com/p/2d40f16a03eb"><b>QB-GPT</b></a>, Generating NFL plays trajectories with Transformers<br>
+                </li>
+                <li class="listexp"> <a href="https://medium.com/p/f90e7420835b"><b>StratFormer</b></a>, Transformers will guess NFL playbooks<br>
+                </li>
+                <li class="listexp"> <a href="https://www.ensae.fr/courses/1408-groupe-de-statistique-appliquee"><b>ENSAE Stat'App project</b></a>, Fraud detection<br>      
+                </li>
+                <li class="listexp"> <a href="https://nuvocare.fr/llm-sante/"><b>LLM in Healthcare (French)</b></a>, Application des Large Language Models en santé : attentes légales, limites et évolutions<br>      
+                </li>
+                <li class="listexp"> <a href="https://medium.com/me/stats/post/5ca199d02d8b"><b>EconoBERT: Bridging the gap between NLP and Economics</b></a>, Building a BERT for economists<br>      
+                </li>
+            </ul>
         </details>
     </section>
 
-    <section>
+    <section class="sectionelement">
         <details>
-            <summary>Dropdown Section 4</summary>
+            <summary>Skills</summary>
             <p>Content of dropdown section 4.</p>
         </details>
     </section>
